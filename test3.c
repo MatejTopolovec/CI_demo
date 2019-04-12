@@ -1,5 +1,5 @@
-#include<stdio.h>
+#include "test3.h"
 
-Test3Function() {
-	printf("Inside test3.c Test3Function()!\n");
+void Test3Function() {
+	printf("Inside test3.c Test3Function()!");
 }

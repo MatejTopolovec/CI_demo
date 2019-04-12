@@ -7,14 +7,19 @@ all_c_files := $(wildcard *.c)
 
 all : test print clean
 
-test : test1.o test2.o test3.o
-	gcc test1.o test2.o test3.o -o test.exe
+test : test1.o test2.o test3.o 
+	gcc test1.o test2.o test3.o -o test
+
+unit: test2.o test3.o test2_test.o
+	gcc test2.o test3.o test2_test.o -o Test2_unit
 
 include Makefile_test1.mk
 
 include Makefile_test2.mk
 
 include Makefile_test3.mk
+
+include Makefile_unit.mk
 
 SubSystem :
 	$(MAKE) -C SubSystem
