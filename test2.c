@@ -8,5 +8,5 @@ void Test2Function() {
 }
 
 int addition(int x, int y) {
-	return x + y;
+	return x - y;
 }
